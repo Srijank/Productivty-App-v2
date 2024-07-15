@@ -1,0 +1,492 @@
+body{
+    position: relative;
+}
+.navbar{
+    background-color: #102C57;
+    color:white;
+    width:100%;
+    display:grid;
+    grid-template-columns: 80% 20%;
+    position: relative;
+}
+.logo{
+    width:3rem;
+    margin-left: 20px;
+}
+.nav-list{
+    list-style-type: none;
+   
+}
+.nav-items{
+    display: inline;
+    font-size: 12px;
+    padding: 10px;
+}
+.nav-list{
+    position:absolute;
+    right: 3%;
+    top:30%;
+}
+
+/*hero section */
+.hero{
+    background-color: #1679AB;
+    border-radius: 0%;
+}
+.card-body{
+    padding: 10%;
+    color: white;
+}
+.features{
+    
+    display: grid;
+    grid-template-columns:   1fr 1fr 1fr;
+    background-color: white; 
+   
+    
+}
+.card-text{
+    color:black;
+}
+.featurecard{
+    background-color:white; 
+    width:100%;
+    height:90%;
+    
+}
+ .hero-subtitle{
+    margin-bottom: 20px;
+} 
+.images{
+  width:40%;
+  height: 40%;
+  margin-left: 25%;
+  margin-top: 10%;
+  margin-bottom: 10px;
+}
+.text{
+    font-size: 15px;
+    color:black;
+}
+.featuresdiv{
+    background-color: #1679AB;
+    width: 96%;
+    box-shadow: 5px 5px 5px 5px  #1679AB;
+    margin: 10px;
+
+}
+
+.links{
+    text-decoration: none;
+    color:white;
+}
+.links:hover{
+    color: #FFB1B1;
+}
+
+/*loginsignup */
+.forms{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:20px;
+    background-color:#1679AB;
+    padding:5%;
+    padding-top: 2%;
+}
+.inputl{
+    margin-bottom: 10px;
+    height: 70%;
+}
+
+
+.inputlabel{
+   color:white;
+}
+.fullpage{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    
+}
+.formtitle{
+    margin-left: 35%;
+    margin-bottom:10%;
+    margin-top:-10%;
+    color: white;
+}
+/*Deleting scenario*/
+.disabled {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    pointer-events: none;
+  }
+/*footer*/
+
+.footer{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 10vh;
+    background-color: #102C57; 
+}
+.footer-item{
+   
+    display: block;
+    color:white;
+    width:55%;
+    font-size: 14px;
+    margin-left: 45%;
+}
+.linkedin{
+    width:4%;
+    margin-left:50%;
+}
+/* Weekly schedule section*/
+#weekly_schedule{
+    margin-top: 10px;
+    margin-left: 15px;
+    background-color:#102C57;
+    width:98%;
+    padding:1rem;
+    box-shadow: 10px  aliceblue;
+    position: relative;
+    color: white;
+    margin-bottom: 10px;
+}
+ .taskcount{
+    position:absolute;
+    left:40%;
+    color:white
+ }   
+
+.weekly_title{
+    position:absolute;
+    display: inline;
+    left:40%;
+}
+.btn{
+    background-color: rgb(45, 70, 197);
+    color: white;
+    padding:0.2rem 1rem; 
+}
+
+.delete-icon,.add_icon{
+    width:3%;
+    display: inline;
+    position:relative;
+    left:90%;
+    top:-20px;
+}
+.add_task{
+    margin-bottom: 30px;
+}
+.description,.statusoftask,.priorityoftask ,.deadlineoftask{
+    color:black;
+}
+/*Pop up */
+.tooltips {
+ width:6%;
+ display: inline;
+ margin-left: 10px;
+
+}
+.pop_up,.edit_pop_up{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    /* grid-template-rows:1fr 1fr 1fr 1fr 1fr; */
+    gap:10px;
+   visibility: hidden;
+   background-color:#1679AB;
+   box-shadow: 5px grey;
+   z-index: 1;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 4%;
+}
+.blurred {
+    filter: blur(5px);
+}
+.weekly_task{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap:10px;
+}
+.edit_icon{
+    position:relative;
+    left:80%;
+    width:13%;
+    display: inline;
+}
+h6,span{
+    font-size: 0.8rem;
+    font-weight: 500;;
+}
+
+/* h6.priorityoftask {
+  
+} */
+/* label{
+    display: inline;
+} */
+/* #priority,#add_now,#statusTask,.deadline{
+    position: absolute;
+    left:40%;
+} */
+/* #add_now{
+    width:10%;
+    height: 10%;
+}
+.task_list{
+    position: relative;
+    left:10%;
+    display:inline-block;
+    width: 40%;
+}
+
+.tasks{
+    background-color: white;
+    padding: 5px;
+    margin-bottom:10px;
+    display: inline;
+
+}
+.completed{
+    text-decoration: line-through;
+    opacity:0.5;
+}
+.tasks{
+    position: relative;
+}
+ h6.status{
+    position: absolute;
+    top:-20%;
+    left:65%;
+    margin-top: 30px;
+    display: inline;
+    font-size: 10px;
+    color:orange;
+} 
+
+
+
+.priority{
+    position: absolute;
+    top:-20%;
+    left:58%;
+    margin-top: 28px;
+} 
+.edit_icon{
+    position:relative;
+    left:90%;
+    width:5%;
+    display: inline;
+}
+ h6.due{
+    position: absolute;
+    top:20%;
+    left:80%;
+    display: inline;
+    font-size: 12px;
+    color:red;
+} 
+.tasks{
+    color:black;
+}
+input[type="checkbox"] {
+   
+    width: 10px;
+    height: 10px;
+    border: 2px solid #888;
+    border-radius: 100%;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    left:10%;
+} */
+.na-font {
+    font-size: 12px; /* Adjust the font size as per your requirement */
+    color: gray; /* Optional: Adjust the color to visually indicate disabled state */
+}
+.orange{
+    color:orange;
+}
+.red{
+    color:red;
+}
+.green{
+    color:green;
+}
+.grey{
+    color:grey;
+}
+.taskid{
+    display: none;
+}
+#calendertoshow{
+    display: inline;
+   
+    width: 1.5rem; 
+    height:1.8rem; 
+  
+}
+@media (min-width:300px)and (max-width:650px){
+    .weekly_task{
+        display: grid;
+        grid-template-columns: 1fr  ;
+        gap:10px;
+        margin-left:23%;
+    }
+    .weekly_title{
+        position:absolute;
+        left:30%;
+    }
+    .taskcount{
+        position:absolute;
+        left:30%;
+        color:white
+     } 
+     .tooltips {
+        width:10%;
+        display: inline;
+        margin-left: 0px;
+       
+       }
+       .delete-icon,.add_icon{
+        width:5%;
+        display: inline;
+        position:relative;
+        left:90%;
+        top:-25px;
+    }
+ 
+}
+
+@media (min-width:650px)and (max-width:750px){
+    .weekly_task{
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        gap:10px;
+        
+    }
+    .weekly_title{
+        position:absolute;
+        left:30%;
+    }
+ 
+}
+@media (min-width:750px)and (max-width:1000px){
+    .weekly_task{
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        gap:10px;
+        margin-left: 10%;
+    }
+    .weekly_title{
+        position:absolute;
+        left:40%;
+    }
+}
+@media (min-width:1000px)and (max-width:1400px){
+    .weekly_task{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap:10px;
+        
+    }
+    .weekly_title{
+        position:absolute;
+        left:40%;
+    }
+}
+  
+  @media (min-width:400px)and (max-width:760px){
+   
+    .features{
+   
+        display: grid;
+        grid-template-columns: 1fr;
+       
+        
+        
+    }
+    .images{
+        width:50%;
+        height: 50%;
+        margin-top: 15%;
+      }
+    .featurecard{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+      
+        margin:0%;
+        
+    }
+    .text{
+        font-size: 12px;
+        color:black;
+    }
+    .featuresdiv{
+        
+        margin-right: 100px;
+        width:96%;
+    }
+    
+    .footer-item{
+        font-size: 14px;
+        margin-left: 40%;
+    }
+    .linkedin{
+        width:10%;
+        margin-left: 50%;
+    }
+    .login{
+        height:50%;
+    }
+   
+} 
+@media (min-width:760px)and (max-width:1100px){
+    .features{
+   
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        
+    }
+    .images{
+        width:25%;
+        height: 25%;
+        margin-top: 15%;
+      }
+}
+
+@media (min-width:1100px)and (max-width:1500px){
+    
+    .images{
+        width:28%;
+        height: 28%;
+        margin-top: 15%;
+      }
+      .featurecard{
+   
+        width:100%;
+       
+        
+    }
+    
+}
+
+@media (max-width:1100px){
+    #weekly_schedule{
+         width:94%;
+         margin-top: 10px;
+    }
+   
+  
+}
+
+@media (min-width:1500px) and (max-width:1800px){
+ 
+}
